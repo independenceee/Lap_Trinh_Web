@@ -1,0 +1,39 @@
+﻿<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- //for-mobile-apps -->
+    <link href="~/NguyenDuyKhanh_211202428_De_01/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/NguyenDuyKhanh_211202428_De_01/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- font-awesome icons -->
+    <link href="~/NguyenDuyKhanh_211202428_De_01/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="~/NguyenDuyKhanh_211202428_De_01/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+</head>
+
+<body>
+    <!-- header -->
+    <partial name="NguyenDuyKhanh_Header"/>
+
+    <!-- //header -->
+    <!-- navigation -->
+    @* <partial name="NguyenDuyKhanh_Nav"/> *@
+    @await Component.InvokeAsync("Render")
+    <!-- //navigation -->
+    @RenderBody()
+    <!-- footer -->
+    <partial name="NguyenDuyKhanh_Footer" />
+    <!-- //footer -->
+</body>
+</html>
